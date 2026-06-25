@@ -1,0 +1,14 @@
+function filtrar() {
+    let input = document.getElementById("buscador").value.toLowerCase();
+    let fichas = document.getElementsByClassName("ficha");
+
+    for (let i = 0; i < fichas.length; i++) {
+        let texto = fichas[i].innerText.toLowerCase();
+
+        if (texto.includes(input)) {
+            fichas[i].style.display = "block";
+        } else {
+            fichas[i].style.display = "none";
+        }
+    }
+}

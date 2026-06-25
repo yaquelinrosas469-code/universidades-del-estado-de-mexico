@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+    background: linear-gradient(135deg, #001f54, #0353a4, #00a8e8);
+    min-height: 100vh;
+}
+
+/* Bolitas decorativas */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image:
+        radial-gradient(circle, rgba(255,255,0,0.4) 25px, transparent 26px),
+        radial-gradient(circle, rgba(255,255,255,0.2) 40px, transparent 41px),
+        radial-gradient(circle, rgba(255,255,0,0.3) 18px, transparent 19px);
+
+    background-size: 250px 250px;
+    background-position: 0 0, 100px 100px, 200px 50px;
+
+    z-index: -1;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+}
+
+/* Buscador */
+.busqueda {
+    text-align: center;
+    margin: 20px;
+}
+
+#buscador {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+}
+
+/* Contenedor */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Tarjetas */
+.ficha {
+    background: rgba(255,255,255,0.95);
+    width: 300px;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.ficha img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.ficha h2 {
+    color: #0353a4;
+}
+
+span {
+    font-weight: bold;
+}
+
+a {
+    color: #0353a4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
